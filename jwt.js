@@ -12,7 +12,7 @@ const oneHour = 60 * 60;
 const expireTime = now + oneHour;
 
 const claimSet = {
-    iss: "[fill email private]",
+    iss: "${fill client_email}",
     iat: now,
     exp: expireTime,
     scope: "https://www.googleapis.com/auth/androidpublisher",
